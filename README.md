@@ -77,33 +77,5 @@ curl -X POST http://localhost:3000/auth/signup \
 
 ---
 
-## Diagrams
-
-### User Flow
-```mermaid
-flowchart TD
-    A["User Signup/Login"] -->|JWT| B["Access Protected Endpoints"]
-    B --> C["View Courses"]
-    B --> D["Enroll in Course"]
-    D --> E["Track Progress"]
-    E --> F["Mark Lessons Complete"]
-    E --> G["Attempt Quizzes"]
-    G --> H["View Scores & Progress"]
-```
-
-### Data Model Relationships
-```mermaid
-erDiagram
-    USER ||--o{ COURSE : "enrolledCourses"
-    USER ||--o{ PROGRESS : "progress"
-    COURSE ||--o{ LESSON : "lessons"
-    COURSE ||--o{ QUIZ : "quizzes"
-    PROGRESS ||--o{ QUIZ : "quizAttempts"
-    PROGRESS ||--o{ LESSON : "completedLessons"
-    COURSE }o--|| USER : "createdBy"
-```
-
----
-
 ## License
 MIT 
