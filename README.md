@@ -50,21 +50,21 @@ node index.js
 ## API Overview
 
 ### Authentication
-- `POST /auth/signup` — Register a new user
-- `POST /auth/login` — Log in and receive a JWT
+- `POST /auth/signup` - Register a new user
+- `POST /auth/login` - Log in and receive a JWT
 
 ### Courses
-- `POST /courses/` — (Admin) Create a course
-- `GET /courses/` — List all courses (paginated)
-- `GET /courses/:id` — Get a single course
-- `GET /courses/:id/enroll` — Enroll in a course
-- `POST /courses/:id/lessons` — (Admin) Add a lesson
-- `POST /courses/:id/quizzes` — (Admin) Add a quiz
+- `POST /courses/`- (Admin) Create a course
+- `GET /courses/`- List all courses (paginated)
+- `GET /courses/:id` -Get a single course
+- `GET /courses/:id/enroll`- Enroll in a course
+- `POST /courses/:id/lessons` -(Admin) Add a lesson
+- `POST /courses/:id/quizzes` -(Admin) Add a quiz
 
 ### Progress
-- `POST /progress/lesson` — Mark lesson as complete
-- `POST /progress/quiz` — Attempt a quiz
-- `GET /progress/:courseId` — Get progress for a course
+- `POST /progress/lesson`- Mark lesson as complete
+- `POST /progress/quiz`- Attempt a quiz
+- `GET /progress/:courseId` -Get progress for a course
 
 ---
 
